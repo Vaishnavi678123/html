@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Ticket Booking App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .booking-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="booking-box">
+    <h2>Movie Ticket Booking</h2>
+    <img src="booking.jpg" width="100px">
+
+    <label for="movie">Select Movie:</label>
+    <select id="movie">
+      <option value="10">Inception - $10</option>
+      <option value="8">The Matrix - $8</option>
+      <option value="12">Interstellar - $12</option>
+    </select>
+
+    <label for="tickets">Number of Tickets:</label>
+    <input type="number" id="tickets" min="1" value="1">
+
+    <button onclick="bookTickets()">Book Now</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script>
+    function bookTickets() {
+      const movieSelect = document.getElementById("movie");
+      const ticketCount = parseInt(document.getElementById("tickets").value);
+      const pricePerTicket = parseInt(movieSelect.value);
+      const movieName = movieSelect.options[movieSelect.selectedIndex].text.split(" - ")[0];
+
+      if (isNaN(ticketCount) || ticketCount < 1) {
+        document.getElementById("output").innerText = "Please enter a valid number of tickets.";
+        return;
+      }
+
+      const totalCost = ticketCount * pricePerTicket;
+
+      document.getElementById("output").innerText =
+        `🎟️ You booked ${ticketCount} ticket(s) for "${movieName}". Total Cost: $${totalCost}`;
+    }
+  </script>
+
+</body>
+</html>
+
