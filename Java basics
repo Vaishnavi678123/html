@@ -1,0 +1,103 @@
+Here are the Java programs for each question from the image you've shared:
+
+---
+
+### **JAVA Basics**
+
+**1. How to create a class, object, method, and its signature**
+
+```java
+class MyClass {
+    void displayMessage() {
+        System.out.println("Hello, this is a method.");
+    }
+
+    public static void main(String[] args) {
+        MyClass obj = new MyClass(); // creating object
+        obj.displayMessage();        // calling method
+    }
+}
+```
+
+**2. Write a program to print your name.**
+
+```java
+public class PrintName {
+    public static void main(String[] args) {
+        System.out.println("Lavanya");
+    }
+}
+```
+
+**3. Single line, multi-line, and documentation comments**
+
+```java
+/**
+ * This is a documentation comment
+ * Author: Lavanya
+ */
+public class CommentsExample {
+    public static void main(String[] args) {
+        // This is a single-line comment
+        System.out.println("Hello");
+
+        /*
+         * This is a multi-line comment
+         * Printing Welcome
+         */
+        System.out.println("Welcome");
+    }
+}
+```
+
+**4. Define variables for different Data Types and print them**
+
+```java
+public class DataTypesExample {
+    public static void main(String[] args) {
+        int age = 20;
+        boolean isStudent = true;
+        char grade = 'A';
+        float height = 5.4f;
+        double weight = 60.5;
+
+        System.out.println(age);
+        System.out.println(isStudent);
+        System.out.println(grade);
+        System.out.println(height);
+        System.out.println(weight);
+    }
+}
+```
+
+**5. Local and Global variables with same name**
+
+```java
+public class ScopeExample {
+    int number = 100; // global
+
+    void display() {
+        int number = 50; // local
+        System.out.println("Local: " + number);
+        System.out.println("Global: " + this.number);
+    }
+
+    public static void main(String[] args) {
+        ScopeExample obj = new ScopeExample();
+        obj.display();
+    }
+}
+```
+
+**6. Function to print name and call from main method**
+
+```java
+public class FunctionExample {
+    static void printName() {
+        System.out.println("Lavanya");
+    }
+
+    public static void main(String[] args) {
+        printName();
+    }
+}
