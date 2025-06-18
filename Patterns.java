@@ -383,7 +383,7 @@ public class Pattern1
         }
     }
 }
-*     
+    *     
     *     
 * * * * * 
     *     
