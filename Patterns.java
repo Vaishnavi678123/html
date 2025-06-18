@@ -3,51 +3,24 @@ public class Pattern1
 {
 public static void main(String[]args)
 {
-System.out.println("*");
-}
-}
-
-
-/*2.
-public class Pattern1
-{
-public static void main(String[]args)
-{
-for(int i=0;i<5;i++)
-{
-System.out.println("*");
-}
-}
-}
-
-/*3.
-public class Pattern1
-{
-public static void main(String[]args)
-{
-for(int i=0;i<5;i++)
-{
-System.out.print("*");
-}
-}
-}
-
-/*4.
-public class Pattern1
-{
-public static void main(String[]args)
-{
 for(int i=0;i<5;i++)
 {
 for(int j=0;j<5;j++)
 {
 System.out.print("*");
 }
-System.out.println("");
+System.out.println();
 }
 }
 }
-/*5.
+*****
+*****
+*****
+*****
+*****
+*/
+
+/*2.
 public class Pattern1
 {
 public static void main(String[]args)
@@ -70,7 +43,7 @@ System.out.println("");
 
 */
 
-/*6.
+/*3.
 public class Pattern1
 {
 public static void main(String[]args)
@@ -93,7 +66,7 @@ System.out.println("");
 
 */
 
-/*7.
+/*4.
 public class Pattern1
 {
     public static void main(String[]args)
@@ -119,7 +92,7 @@ public class Pattern1
 21      22      23      24      25
 
 */
-/*8.
+/*5.
 public class Pattern1
 {
     public static void main(String[]args)
@@ -151,7 +124,7 @@ public class Pattern1
 
 */
 
-/*9.
+/*6.
 public class Pattern1
 {
     public static void main(String[]args)
@@ -179,7 +152,7 @@ public class Pattern1
 
 */
 
-/*10.
+/*7.
 public class Pattern1
 {
     public static void main(String[]args)
@@ -201,7 +174,7 @@ public class Pattern1
 0 1 0 1
 */
     
-/*11.
+/*8.
 public class Pattern1
 class Patterns
 {
@@ -230,7 +203,7 @@ class Patterns
  *******
 *********
 /*
-  /*12.
+  /*9.
 public class Pattern1
 class Patterns
 {
@@ -260,7 +233,7 @@ class Patterns
 2 4 6 8 10
 /*
 
-/*13.
+/*10.
 public class Pattern1
  {
     public static void main(String[] args) 
@@ -283,7 +256,7 @@ I N D I
 I N D I A 
 /*
 
-*/14.
+*/11.
 public class Pattern1
 class Patterns
 {
@@ -313,7 +286,7 @@ class Patterns
 * * * * *
 /*  
 
-/*15.
+/*12.
 public class Pattern1
 {
     public static void main(String[] args) 
@@ -354,7 +327,7 @@ public class Pattern1
   * * * * * 
     * * * 
       *
-/*16.
+/*13.
 public class Pattern1
 {
     public static void main(String[] args) 
@@ -384,7 +357,7 @@ public class Pattern1
 
 /*
 
-/*17.
+/*14.
 public class Pattern1    
 {
     public static void main(String[] args) 
@@ -418,7 +391,7 @@ public class Pattern1
 
 
 
-/*18.
+/*15.
 public class Pattern1
 {
     public static void main(String[] args) 
